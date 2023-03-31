@@ -1,0 +1,25 @@
+.favorites_page {
+  padding: 6vh 10vw;
+}
+
+.fav_icon {
+  position: absolute;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.img-wrapper {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.5;
+  width: 35px;
+  height: 35px;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

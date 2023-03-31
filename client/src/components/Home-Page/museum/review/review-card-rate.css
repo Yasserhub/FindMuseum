@@ -1,0 +1,14 @@
+.stars-review {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.stars-review svg {
+  width: 1rem;
+  stroke: orange;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-right: 5px;
+}

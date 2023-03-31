@@ -1,0 +1,16 @@
+.museum-overview {
+  margin-top: 10vh;
+  display: flex;
+  margin-left: 4vw;
+  margin-right: 3vw;
+}
+
+@media (max-width: 699px) {
+  .museum-overview {
+    flex-direction: column;
+  }
+
+  .museum-overview {
+    margin-left: 3vw;
+  }
+}

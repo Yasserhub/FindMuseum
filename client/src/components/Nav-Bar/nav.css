@@ -1,0 +1,131 @@
+.nav {
+  background-color: var(--navbar-color);
+  color: white;
+  display: flex;
+  height: 10vh;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  font-size: clamp(1.2rem, 1.6vw, 2rem);
+  width: 100%;
+}
+
+.logo-navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-nav {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.logo {
+  border-radius: 4px;
+  display: flex;
+  color: white;
+  max-height: 10vh;
+}
+
+.burger-menu-icon {
+  display: none;
+}
+
+.navbar {
+  width: 70%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar-item {
+  margin-left: clamp(1.8rem, 2vw, 2.2rem);
+  width: 10rem;
+}
+
+.navbar-item h3 {
+  display: inline;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.navbar-item a:hover {
+  border: 2px solid var(--mobile-navbar-color);
+  border-radius: 4px;
+}
+
+.activeBar {
+  background-color: var(--active-navlink-color);
+  border-radius: 4px;
+}
+
+@media (min-width: 1500px) {
+  .nav {
+    font-size: clamp(1.2rem, 1.6vw, 1.4rem);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1089px) {
+  .navbar-item {
+    margin-left: 40px;
+    width: 95px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 99999;
+    right: 0px;
+    height: 90vh;
+    width: 100vw;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    transform: translate(100%);
+    transition: all 0.5s ease-in;
+    justify-content: space-around;
+  }
+
+  .navbar-item {
+    opacity: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .navbar.active {
+    background: var(--mobile-navbar-color);
+    transition: all 0.6s ease-in;
+    transform: translate(0%);
+  }
+
+  .navbar.active .navbar-item {
+    opacity: 1;
+  }
+
+  .navbar.active .navbar-item a:hover {
+    background: var(--navbar-color);
+  }
+
+  .burger-menu-icon {
+    display: block;
+    right: 2rem;
+    font-size: clamp(2.3rem, 2.5vw, 4rem);
+    cursor: pointer;
+    margin-top: 0.7rem;
+  }
+}

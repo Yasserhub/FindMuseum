@@ -1,0 +1,16 @@
+.searched-overview {
+  margin-top: 10vh;
+  display: flex;
+  margin-left: 4vw;
+  margin-right: 2vw;
+}
+
+@media (max-width: 699px) {
+  .searched-overview {
+    flex-direction: column;
+  }
+
+  .searched-overview {
+    margin-left: 2vw;
+  }
+}

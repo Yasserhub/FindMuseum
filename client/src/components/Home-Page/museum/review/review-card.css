@@ -1,0 +1,140 @@
+.review-card-container {
+  width: 100%;
+  margin-bottom: 5vh;
+  background-color: #e6e2d8;
+  border-radius: 0.5rem;
+}
+
+.review-card-container h1 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.review-card-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.comment-sections-container {
+  max-height: 70vh;
+  overflow-y: scroll;
+  padding: 0 30px;
+}
+
+.comment-section {
+  margin-bottom: 3rem;
+  width: 40vw;
+  background-color: whitesmoke;
+  border-radius: 1rem;
+}
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-container hr {
+  margin: 0 15px;
+  border: none;
+  height: 1px;
+  background-color: lightgray;
+}
+
+.comment-header-content {
+  margin: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.avatar div {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-rate-container {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.date-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.review-body {
+  margin: 10px 15px;
+}
+
+.review-body p {
+  font-size: 1.1rem;
+  min-height: 3vh;
+  max-height: 8vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1200px) {
+  .comment-section {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 899px) {
+  .comment-section {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .comment-section {
+    width: 70vw;
+  }
+
+  .comment-header-content {
+    flex-direction: column;
+  }
+
+  .date-container {
+    justify-content: flex-end;
+  }
+
+  .review-body p {
+    min-height: 7vh;
+    max-height: 12vh;
+  }
+
+  .review-card-head h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .review-card-head h3 {
+    text-align: center;
+    margin-top: 1vh;
+  }
+}

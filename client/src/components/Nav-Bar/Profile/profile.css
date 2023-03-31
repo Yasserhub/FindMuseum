@@ -1,0 +1,138 @@
+.navbar-item-profile {
+  margin-left: 50px;
+}
+
+.menu-trigger {
+  display: flex;
+  align-items: center;
+}
+
+.menu-trigger img {
+  width: 6vh;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 11vh;
+  right: 1vh;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 200px;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: var(--speed) ease;
+}
+
+.container--user {
+  display: flex;
+  align-items: center;
+}
+
+.container--user img {
+  width: 50px;
+  height: 50px;
+}
+
+.profile-name {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2rem;
+  margin-left: 15px;
+}
+
+.profile-name span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dropdown-menu ul li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.dropdown-menu ul li:hover a {
+  color: rgb(212, 33, 9);
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.dropdownItem {
+  display: flex;
+  margin: 5px 0;
+}
+
+.dropdownItem img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.dropdownItem a {
+  max-width: 100px;
+  margin-left: 10px;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 900px) and (max-width: 1089px) {
+  .navbar-item-profile {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .dropdown-menu {
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 200px;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-trigger img {
+    position: absolute;
+    top: -8vh;
+    right: 70px;
+    width: 6vh;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}

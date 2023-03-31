@@ -1,0 +1,170 @@
+.container--footer {
+  background-color: var(--border-color);
+  padding: 0.5rem 2rem 2rem;
+  color: var(--background-color);
+}
+
+.container--footer h2 {
+  font-size: 3.5rem;
+}
+
+.container--company-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.4rem;
+}
+
+.logo-find-company {
+  padding: 0;
+  width: 8rem;
+}
+
+.container--follow-us {
+  margin-left: 15px;
+}
+
+.container--mobile-app {
+  margin-top: 2rem;
+}
+
+.container--mobile-app img {
+  width: 250px;
+}
+
+.container--mobile-app img:hover {
+  cursor: pointer;
+}
+
+.container--footer h3 {
+  font-size: 2rem;
+}
+
+.container--company-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 4rem 0;
+}
+
+.container--company-section ul {
+  list-style-type: none;
+}
+
+.social-media-links {
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.social-media-links li {
+  padding-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.social-media-links li a:hover {
+  color: #ffffff;
+}
+
+.container--have-question a {
+  margin-left: 0.5rem;
+}
+
+.container--have-question a:hover {
+  color: white;
+}
+
+.container--info {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.container--phone {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.container--more {
+  width: 6rem;
+}
+
+.short-links .more {
+  padding-top: 0.5rem;
+}
+
+.footer-list-item {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-list-item a {
+  transition: all 0.3s ease;
+}
+
+.footer-list-item a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.container--copyright-section {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 899px) {
+  .container--footer {
+    padding: 1rem;
+  }
+
+  .container--company-logo {
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-find-company {
+    width: 7rem;
+  }
+
+  .container--footer h2 {
+    font-size: 3rem;
+  }
+
+  .container--company-section {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container--company-information {
+    padding-top: 1rem;
+  }
+
+  .container--have-question {
+    padding-top: 2rem;
+  }
+
+  .container--page-links {
+    padding-top: 2rem;
+  }
+
+  .container--more {
+    padding-top: 2rem;
+  }
+
+  .container--info {
+    justify-content: center;
+  }
+
+  .container--phone {
+    justify-content: center;
+  }
+
+  .container--copyright-section {
+    margin-bottom: 1rem;
+  }
+}

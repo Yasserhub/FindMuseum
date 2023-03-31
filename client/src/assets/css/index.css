@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hubballi", cursive;
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: #dcd7c9;
+  --active-navlink-color: #3f4e4f;
+  --navbar-color: #a27b5c;
+  --mobile-navbar-color: #2c3639;
+}
+
+:root {
+  --textarea-color: #dcd7c9;
+  --background-color: #3f4e4f;
+  --border-color: #a27b5c;
+  --icon-color: #2c3639;
+  --star-filled: rgb(249, 204, 72);
+  --star-empty: rgb(173, 168, 168);
+}

@@ -1,0 +1,229 @@
+.home-offers-section {
+  padding: 20px;
+  display: flex;
+  background-color: #3f4e4f;
+  justify-content: space-evenly;
+}
+
+.home-offers-container {
+  display: flex;
+  justify-content: center;
+}
+
+.offers-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-offers-img {
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.offers-text {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  display: flex;
+  margin-right: 200px;
+  color: #dcd7c9;
+}
+
+.home-offers-button {
+  margin-bottom: 50px;
+  border-radius: 4px;
+  background-color: #a27b5c;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #dcd7c9;
+}
+
+.home-offers-button:hover {
+  background-color: #dcd7c9;
+  color: #a27b5c;
+  cursor: pointer;
+}
+/*museums events sections*/
+.van-gogh-section,
+.louwman-section,
+.kunstmuseum-section {
+  display: flex;
+  max-width: 100%;
+  padding: 3rem;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.kunstmuseum-section button {
+  margin-top: 50px;
+  border-radius: 4px;
+  background-color: #a27b5c;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #dcd7c9;
+}
+
+.kunstmuseum-section button:hover {
+  background-color: #3f4e4f;
+  cursor: pointer;
+}
+
+.section-button {
+  margin-top: 50px;
+  border-radius: 4px;
+  background-color: #a27b5c;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #dcd7c9;
+}
+
+.section-button:hover {
+  background-color: #3f4e4f;
+  cursor: pointer;
+}
+
+.louwman-section {
+  background-color: var(--navbar-color);
+}
+
+.louwman-section button {
+  margin-top: 50px;
+  border-radius: 4px;
+  background-color: #3f4e4f;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #dcd7c9;
+}
+
+.louwman-section button:hover {
+  background-color: #dcd7c9;
+  color: #3f4e4f;
+  cursor: pointer;
+}
+
+.event-sections-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-para {
+  margin-left: 55px;
+  margin-right: 55px;
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+}
+
+.sunflowers {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 2px #3f4e4f);
+}
+.auto {
+  width: 90vh;
+  height: 60vh;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 2px #2b2f2f);
+}
+.escher {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 10px;
+  filter: drop-shadow(4px 4px 2px #2b2f2f);
+}
+
+@media screen and (max-width: 899px) {
+  .van-gogh-section,
+  .kunstmuseum-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .louwman-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .image-section-container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .event-sections-text {
+    padding-top: 1rem;
+    align-items: center;
+  }
+  .louwman-section .image-section-container {
+    padding-left: 0;
+  }
+
+  .home-offers-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offers-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offers-text {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+  .home-offers-img {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-para {
+    width: 90%;
+  }
+
+  .sunflowers {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 2px #3f4e4f);
+  }
+  .auto {
+    width: 45vh;
+    height: 30vh;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 2px #2b2f2f);
+  }
+  .escher {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 2px #2b2f2f);
+  }
+}

@@ -1,0 +1,133 @@
+.container--register-form {
+  margin-top: 10vh;
+  padding: 10.5rem 0;
+}
+
+.register-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.message-container {
+  height: 18px;
+  color: red;
+  margin: 0.3rem auto 1rem;
+  font-size: 1.1rem;
+}
+
+.header h1 {
+  margin: 5px auto;
+  font-size: 3rem;
+  color: #3f4e4f;
+}
+
+.login-link {
+  color: #3f4e4f;
+  font-size: 1.3rem;
+}
+
+.login-link a {
+  color: rgb(104, 104, 104);
+}
+
+.login-link a:hover {
+  color: blue;
+}
+
+.form-container {
+  margin: 20px auto;
+}
+
+.container-input {
+  border-radius: 4px;
+  background-color: #dcd7c9;
+  padding: 5px 15px;
+  box-shadow: 0 1px 10px 1px #6c7070;
+  border: none;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 2px solid #a27b5c;
+  margin: 0 auto;
+}
+
+.register-input {
+  width: 245px;
+  background-color: #dcd7c9;
+  border: none;
+  height: 28px;
+  outline: none;
+  font-size: 1.3rem;
+  font-family: "Hubballi", cursive;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.submit-button {
+  border-radius: 4px;
+  background-color: #3f4e4f;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  font-size: 1.2rem;
+  color: #dcd7c9;
+}
+
+.submit-button:hover {
+  background-color: #a27b5c;
+  color: white;
+  cursor: pointer;
+}
+
+.container--input-password {
+  display: flex;
+}
+
+.eyes {
+  cursor: pointer;
+}
+
+.spinner {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  display: table;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    width: 300px;
+  }
+
+  .message-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    width: 250px;
+  }
+
+  .container-input {
+    width: 240px;
+    padding: 5px 10px;
+  }
+
+  .register-input {
+    width: 200px;
+    font-size: 1rem;
+  }
+}

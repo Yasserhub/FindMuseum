@@ -1,0 +1,25 @@
+.loading-page {
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10vh;
+  opacity: 0.8;
+}
+
+.loading-page span {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.loading-page .spinner {
+  width: 18rem;
+  height: 18rem;
+  position: absolute;
+  top: 25%;
+  color: var(--color1);
+}

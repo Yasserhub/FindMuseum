@@ -1,0 +1,14 @@
+.searched-museums {
+  display: flex;
+  flex: 10;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
+.searched-museums-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  justify-content: space-evenly;
+}

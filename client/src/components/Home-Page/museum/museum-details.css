@@ -1,0 +1,429 @@
+.museum-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.museum-details {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+}
+
+.each-museum {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 2rem;
+  filter: drop-shadow(2px 4px 4px #3f4e4f);
+}
+
+.hours-price {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.comment-card {
+  display: flex;
+  margin-top: 10vh;
+}
+
+.comment-box {
+  display: flex;
+  margin-top: 10vh;
+}
+
+.each-museum .heart .fav_icon svg {
+  position: absolute;
+  right: 0.5rem;
+  left: auto;
+  width: 5rem;
+  height: 5rem;
+}
+
+.image-museum {
+  width: 100%;
+  height: 350px;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.museum-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: whitesmoke;
+  width: 100%;
+  height: 3rem;
+}
+
+.museum-category .icon {
+  margin-right: 0.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.address {
+  color: whitesmoke;
+  margin-left: 2vw;
+}
+
+.museum-description {
+  width: 50%;
+  margin: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.museum-description h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #3f4e4f;
+}
+
+.museum-description p {
+  color: #2c3639;
+}
+
+.museum-information {
+  width: 100%;
+  background-color: var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.museum-information svg {
+  margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.3rem;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: whitesmoke;
+  margin-right: 2vw;
+  line-height: 25px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.opening-hours {
+  width: 30%;
+  height: auto;
+  margin-top: 0;
+}
+
+.opening-hours thead {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.opening-hours thead th {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+  padding: 10px;
+}
+
+.opening-hours tbody {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.opening-hours h1 {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 10vh;
+}
+
+.opening-hours table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.opening-hours td,
+tr {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+  padding: 10px;
+}
+
+.museum-fees {
+  width: 30%;
+  height: 50vh;
+  margin: 0 2rem;
+}
+
+.museum-fees thead {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.museum-fees thead th {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+  padding: 10px;
+}
+
+.museum-fees tbody {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.museum-fees h1 {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 10vh;
+}
+
+.museum-fees table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.museum-fees td,
+tr {
+  text-align: center;
+  font-family: "Hubballi", cursive;
+  padding: 10px;
+}
+
+.museum-fees h1 {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 10vh;
+}
+
+.museum-iframe {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.museum-iframe iframe {
+  height: 40vh;
+  border: none;
+}
+
+.museum-iframe h1 {
+  text-align: center;
+  color: white;
+  background-color: var(--background-color);
+  height: 10vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.comments-review-container {
+  display: flex;
+  margin-top: 10vh;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+
+.review-card-section {
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1400px) {
+  .comments-review-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .comments-review-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    width: 70vw;
+  }
+
+  .review-card-container {
+    margin-bottom: 0;
+  }
+
+  .comment-card {
+    margin-top: 0;
+  }
+
+  .museum-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hours-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+  }
+
+  .museum-description {
+    margin: 5vh 0 0;
+    width: 70vw;
+  }
+
+  .museum-description h2 {
+    text-align: center;
+  }
+
+  .opening-hours {
+    width: 70vw;
+  }
+
+  .museum-fees {
+    width: 70vw;
+    margin: 10vh 0 0;
+    height: auto;
+  }
+
+  .museum-iframe {
+    width: 70vw;
+    margin-top: 10vh;
+  }
+
+  .each-museum {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .comments-review-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 80vw;
+  }
+
+  .museum-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .hours-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .museum-description {
+    margin-top: 70px;
+    width: 80vw;
+  }
+
+  .museum-description h2 {
+    text-align: center;
+  }
+
+  .opening-hours {
+    width: 80vw;
+    padding: 0;
+    height: auto;
+  }
+
+  .museum-fees {
+    margin: 70px 0 0;
+    width: 80vw;
+    height: auto;
+  }
+
+  .museum-iframe {
+    margin-top: 70px;
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .mu .each-museum {
+    width: 70vw;
+    margin-bottom: 3vh;
+  }
+
+  .museum-information {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .hours-price {
+    margin-top: 70px;
+  }
+
+  .contact {
+    margin-top: 3vh;
+  }
+
+  .museum-category {
+    padding: 10px;
+  }
+
+  .comment-card {
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  .image-museum {
+    height: auto;
+  }
+
+  .comment-box {
+    margin-top: 70px;
+  }
+
+  .review-card-container {
+    margin-bottom: 0;
+  }
+
+  .each-museum {
+    width: 80vw;
+  }
+}
