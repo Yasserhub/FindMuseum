@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import StarRating from "./StarRating";
-// import styled from "styled-components";
 import PropTypes from "prop-types";
 import useFetch from "../../../../hooks/useFetch";
 import { toast } from "react-toastify";

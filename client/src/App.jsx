@@ -6,7 +6,6 @@ import LoginForm from "./pages/Auth/LoginForm";
 import RegisterForm from "./pages/Auth/RegisterForm";
 import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/footer";
-// import Museums from "./pages/Museums/Museums";
 import MuseumOverview from "./pages/MuseumOverview/MuseumOverview";
 import Offers from "./pages/Offers/Offers";
 import Favorites from "./pages/Museums/Favorites";
@@ -15,7 +14,6 @@ import MyProfile from "./pages/MyProfile/MyProfile";
 import { MuseumsProvider } from "./context/museumContext";
 import SearchedOverview from "./pages/MuseumOverview/SearchedOverview";
 
-// import SearchedOverview from "./pages/MuseumOverview/SearchedOverview";
 import UserComments from "./pages/MyProfile/UserComments";
 import ForgotPassword from "./pages/Auth/ForgotPassword";
 import ResetPassword from "./pages/Auth/ResetPassword";
@@ -38,7 +36,6 @@ const App = () => {
             <Route path="/museum/:museumId" element={<MuseumDetails />} />
             <Route path="/profile/:id" element={<MyProfile />} />
             <Route path="/user/comments/:userId" element={<UserComments />} />
-            {/* <Route path="/user/comment/edit" element={<ReviewEdit/>} /> */}
             <Route path="/forgotPassword" element={<ForgotPassword />} />
             <Route path="/otp/:userId" element={<OtpInput />} />
             <Route path="/resetPassword/:userId" element={<ResetPassword />} />

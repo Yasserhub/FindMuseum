@@ -52,7 +52,7 @@ export const getMuseumById = async (req, res) => {
     });
 };
 
-// Gokhan: I have used this inside the comment controller so that as soon as I created a comment to push the comment Id into the museum comments array
+// We have used this inside the comment controller so that as soon as we created a comment to push the comment Id into the museum comments array
 export const addCommentIdToMuseum = async (
   museumId,
   commentId,
@@ -70,7 +70,7 @@ export const addCommentIdToMuseum = async (
   }
 };
 
-// Gokhan: this method updated the avarage rating of the museum's total comment rate and return it inside the addCommentIdToMuseum method that is above and adds that avaragaRate to that museum's rating field in the database
+// This method updated the avarage rating of the museum's total comment rate and return it inside the addCommentIdToMuseum method that is above and adds that avaragaRate to that museum's rating field in the database
 export const updateAvarageRate = async (museumId, newCommentRate) => {
   let avarageRate = 0;
 
@@ -81,7 +81,7 @@ export const updateAvarageRate = async (museumId, newCommentRate) => {
     path: "comments",
     select: { rate: 1 },
   });
-  // length +1 because I didnt fetch the last comment's rate I got last comment's rate above "newCommentRate" manually so I added +1;
+  // length +1 because we fetch the last comment's rate and we got last comment's rate above "newCommentRate" manually so I added +1;
   let length = ratesOfMuseum.comments.length + 1;
   avarageRate = ratesOfMuseum.comments.reduce(
     (acc, current) => acc + Number(current.rate),

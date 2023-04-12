@@ -65,9 +65,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          {/* <div className="container--mobile-app">
-            <img src={mobileStores} alt="Google Play Store" />
-          </div> */}
         </div>
         <div className="container--have-question">
           <h3>Do you have a question?</h3>

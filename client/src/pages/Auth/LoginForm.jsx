@@ -64,10 +64,6 @@ const LoginForm = () => {
     return cancelFetch;
   }, []);
 
-  // useEffect(() => {
-  //   localStorage.clear();
-  // }, [isLoading]);
-
   const initialValues = {
     email: "",
     password: "",

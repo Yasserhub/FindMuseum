@@ -68,9 +68,6 @@ export const loginUser = async (req, res) => {
 export const updateUser = async (req, res) => {
   try {
     const { authUser } = req.body;
-    //console.log(req.body);
-    //console.log(authUser);
-    //console.log(authUser.profilePicture);
     if (typeof authUser !== "object") {
       return res.status(400).json({
         success: false,
@@ -95,7 +92,7 @@ export const updateUser = async (req, res) => {
   }
 };
 
-// Gokhan: I have used this inside the comment controller so that as soon as I created a comment to push the comment Id into the user comments array
+// We have used this inside the comment controller so that as soon as we created a comment to push the comment Id into the user comments array
 export const addCommentIdToUser = async (userId, commentId) => {
   try {
     await User.findByIdAndUpdate(
@@ -120,7 +117,6 @@ export const getAllComments = async (req, res) => {
           select: { firstName: 1, lastName: 1, profilePicture: 1 },
         },
       ],
-      // populate: { path: "userId", select: { firstName: 1, lastName: 1 } },
     })
     .exec((err, comments) => {
       if (err) {

@@ -75,7 +75,7 @@ const useFetch = (route, onReceived) => {
             )}`
         );
       }
-      // Gokhan: I added setTimeout to simulate the spinner icons like loading in register button
+      // Added a setTimeout to simulate the spinner icons like loading in register button
       setTimeout(() => {
         setIsLoading(false);
       }, 2500);
