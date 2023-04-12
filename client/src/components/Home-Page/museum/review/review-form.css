@@ -74,21 +74,3 @@
     height: 150px;
   }
 }
-
-/* @media (min-width: 750px) and (max-width: 1300px) {
-  .comments-review-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .review-form {
-    width: 40vw;
-    margin-right: 10px;
-  }
-}
-
-@media screen and (max-width: 749px) {
-  .comments-review-container {
-    display: flex;
-    flex-direction: column;
-  }
-} */

@@ -91,7 +91,6 @@
 
 .date-number h2 {
   padding-bottom: 3rem;
-  /* padding-top: 3rem; */
 }
 
 @media (min-width: 551px) and (max-width: 899px) {
@@ -140,7 +139,6 @@
   .offer-price {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     font-size: 1.5rem;
   }
 

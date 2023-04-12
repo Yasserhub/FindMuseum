@@ -81,14 +81,12 @@ const Profile = ({ onClose }) => {
                 style={{ width: "50px", height: "50px" }}
               />
             )}
-            {/* <img src={avatar}></img> */}
           </div>
 
           <div
             className={`dropdown-menu ${isProfileOpen ? "active" : "inactive"}`}
           >
             <div className="container--user">
-              {/* <img src={avatar}></img> */}
               {authUser?.profilePicture ? (
                 <img
                   src={authUser?.profilePicture}
