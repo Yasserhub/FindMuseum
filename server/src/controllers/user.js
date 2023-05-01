@@ -41,6 +41,20 @@ export const createUser = async (req, res) => {
   }
 };
 
+//
+export const getFavNum = async (req, res) => {
+  try {
+    const museumFav = await User.find();
+    res.status(200).json({ success: true, result: museumFav });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      msg: "Unable to get the number of museum favorite",
+    });
+  }
+};
+//
+
 export const loginUser = async (req, res) => {
   try {
     const { user } = req.body;
