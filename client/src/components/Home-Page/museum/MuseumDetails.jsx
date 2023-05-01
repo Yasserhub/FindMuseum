@@ -7,6 +7,7 @@ import { FaLink } from "react-icons/fa";
 import ReviewForm from "./review/ReviewForm";
 import ReviewCard from "./review/ReviewCard";
 import Heart from "../../../components/Favorite/Heart";
+import FavNum from "../../../components/Favorite/FavNum";
 import "./museum-details.css";
 
 const MuseumDetails = () => {
@@ -52,6 +53,7 @@ const MuseumDetails = () => {
             <img src={image && image.url} alt={name} className="image-museum" />
             <Heart id={museumId} />
             <div className="museum-category">
+              <FavNum id={museumId} />
               <AiFillBank className="icon" />
               <h2>{category && category}</h2>
             </div>

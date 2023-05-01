@@ -1,0 +1,36 @@
+.fav_num {
+  margin: 0;
+  width: 33px;
+  height: 33px;
+}
+
+.fav_num1 {
+  margin: 0;
+  width: 15px;
+  height: 17px;
+}
+
+.fav-wrapper_num {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fav-wrapper_num1 {
+  position: absolute;
+  color: white;
+  font-size: 17px;
+  width: 35px;
+  height: 35px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
