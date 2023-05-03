@@ -27,10 +27,12 @@ const Events = () => {
       </div>
 
       <div className="van-gogh-section">
-        <img className="sunflowers" src={sunflowers} alt="sunflowers" />
+        <div className="van-gogh-container">
+          <img className="sunflowers" src={sunflowers} alt="sunflowers" />
+        </div>
 
         <div className="event-sections-text">
-          <div className="section-para">
+          <div className="section-para-escher">
             <p>
               The Van Gogh Museum celebrates 50 years of inspiration. Read on
               for the complete anniversary programme.
@@ -59,27 +61,6 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="louwman-section">
-        <div className="event-sections-text">
-          <div className="section-para" style={{ textAlign: "center" }}>
-            <h4>Collection of automobiles </h4>
-            <h3>in LOUWMAN MUSEUM</h3>
-            <p>
-              <i>1 January 2023 - 31 December 2023</i>
-            </p>
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.louwmanmuseum.nl/en/exposition/always-on-display-masterpieces-of-mobility/"
-          >
-            <button className="section-button">Check it out</button>
-          </a>
-        </div>
-
-        <img className="auto" src={auto} alt="auto" />
-      </div>
-
       <div className="kunstmuseum-section">
         <img className="escher" src={escher} alt="escher" width={150} />
 
@@ -102,6 +83,26 @@ const Events = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.kunstmuseum.nl/en/exhibitions/escher-other-world"
+          >
+            <button className="section-button">Check it out</button>
+          </a>
+        </div>
+      </div>
+
+      <div className="louwman-section">
+        <img className="auto" src={auto} alt="auto" />
+        <div className="event-sections-text">
+          <div className="section-para-auto">
+            <h4>Collection of automobiles </h4>
+            <h3>in LOUWMAN MUSEUM</h3>
+            <p>
+              <i>1 January 2023 - 31 December 2023</i>
+            </p>
+          </div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.louwmanmuseum.nl/en/exposition/always-on-display-masterpieces-of-mobility/"
           >
             <button className="section-button">Check it out</button>
           </a>

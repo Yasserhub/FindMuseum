@@ -159,7 +159,7 @@
   height: auto;
   background: linear-gradient(
     175deg,
-    rgba(162, 123, 92, 1) 0%,
+    rgb(63, 78, 79) 0%,
     rgba(220, 215, 201, 1) 100%
   );
 }
