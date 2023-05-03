@@ -13,9 +13,10 @@ body {
 
 :root {
   --main-bg-color: #dcd7c9;
-  --active-navlink-color: #3f4e4f;
-  --navbar-color: #a27b5c;
+  --active-navlink-color: #dcd7c9;
+  --navbar-color: #2c3639;
   --mobile-navbar-color: #2c3639;
+  --footer-color: #2c3639;
 }
 
 :root {
