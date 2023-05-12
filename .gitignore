@@ -13,4 +13,4 @@ coverage
 .env
 
 # Cypress videos from our headless runs should not be pushed to github
-cypress/videos
+cypress/videospublic/photos
