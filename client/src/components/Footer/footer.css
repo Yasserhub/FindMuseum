@@ -12,9 +12,8 @@
   display: flex;
   align-items: center;
   margin-left: 2.4rem;
- 
 }
-.wrapping-logo{
+.wrapping-logo {
   display: flex;
   background-color: var(--active-navlink-color);
   margin-right: 1rem;
@@ -22,13 +21,11 @@
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
-
 }
 
 .logo-find-company {
   padding: 0;
   width: 7rem;
-  
 }
 
 .container--follow-us {

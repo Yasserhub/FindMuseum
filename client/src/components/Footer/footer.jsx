@@ -35,7 +35,7 @@ const Footer = () => {
     <footer className="container--footer">
       <div className="container--company-logo">
         <div className="wrapping-logo">
-        <img src={logo} alt="Company Logo" className="logo-find-company" />
+          <img src={logo} alt="Company Logo" className="logo-find-company" />
         </div>
         <h2>FIND MUSEUM</h2>
       </div>
