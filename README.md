@@ -1,10 +1,14 @@
-`TODO: Add a nice screenshot of the app!`
 
 # Class XX final project
 
-This is the final project for the HackYourFuture curriculum we did as a class using the MERN stack by following the agile methodology with our team and a group of mentors. A quick guide to what we built:
+This is the final project using the MERN stack (MongoDB, Express, React, Node) by following the agile methodology with a team and a group of mentors. A quick guide to what we built:
 
-> TODO: Add short description of the app
+***Find Museum*** is an application aiming to provide information of museums in the Netherlands. It presents also a coming events in the museums\. In addition, the application's visitor can get special offers to visit museums, follow upcoming events, read museum reviews, share their experiences, and add a list of their favorite museums. The application provides a variety of filter options to find museums including searching by name, category, city, rate, and price. It can be also a group of filtering, for example, searching by city, category, and price. 
+
+![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header")
+![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums")
+
+![Hello](client/src/assets/Images-readme/footer.png "Footer") 
 
 `[Click here for the Demo version](TODO: add link)`
 
