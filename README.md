@@ -1,9 +1,11 @@
 # The final project at HackYourFuture program
 
-This is the final project using the MERN stack (MongoDB, Express, React, Node) ![MERN](client/src/assets/Images-readme/MERN.png "MERN"){:target="\_blank"} by following the agile methodology with a team and a group of mentors. A quick guide to what we built:
-
 **_Find Museum_** is an application aiming to provide information of museums in the Netherlands. It presents also a coming events in the museums\. In addition, the application's visitor can get special offers to visit museums, follow upcoming events, read museum reviews, share their experiences, and add a list of their favorite museums. The application provides a variety of filter options to find museums including searching by name, category, city, rate, and price. It can be also a group of filtering, for example, searching by city, category, and price.
 
+<div class="panel panel-danger">
+**Don'ts**
+{: .panel-heading}
+<div class="panel-body">
 **_Features of Application_**
 
 1. Creating users with all fields validation using useFormik and Yup library.
@@ -15,8 +17,10 @@ This is the final project using the MERN stack (MongoDB, Express, React, Node) !
 7. Showing a details page which contains important information about museum including opening hours, price, number of users liking this museum, address, and short information.
 8. Showing top rated museums in Amsterdam city.
 9. Showing upcoming events in some museums.
+</div>
+</div>
 
-[Click here for the Demo version](https://vimeo.com/828049139?share=copy){:target="\_blank"}
+[Click here for the Demo version](https://vimeo.com/828049139?share=copy) {:target="\_blank"}
 
 ![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header"){:target="\_blank"}
 ![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums"){:target="\_blank"}
@@ -25,9 +29,19 @@ This is the final project using the MERN stack (MongoDB, Express, React, Node) !
 
 ![Editing and deleting review](client/src/assets/Images-readme/eadit-delet-review.png "Editing and deleting review") {:target="\_blank"}
 
-![Data Flow Diagram](client/src/assets/Images-readme/Data-Flow-Diagram.png "Data Flow Diagram") {:target="\_blank"}
+## Technologies used:
+
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i> Using MERN stack (MongoDB, Express, React, Node)
+
+![MERN](client/src/assets/Images-readme/MERN.png width="200" height="100" "MERN"){:target="\_blank"}
+
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i> Following the agile methodology with a team and a group of mentors.
 
 ![Agile Methodology](client/src/assets/Images-readme/agile%20methodology.png "Agile Methodology") {:target="\_blank"}
+
+### <i class="fab fa-gitlab fa-fw" style="color:rgb(107,79,187); font-size:.85em" aria-hidden="true"></i> Using Data Flow Diagram.
+
+![Data Flow Diagram](client/src/assets/Images-readme/Data-Flow-Diagram.png "Data Flow Diagram") {:target="\_blank"}
 
 ## 1. Setup
 
