@@ -2,10 +2,7 @@
 
 **_Find Museum_** is an application aiming to provide information of museums in the Netherlands. It presents also a coming events in the museums\. In addition, the application's visitor can get special offers to visit museums, follow upcoming events, read museum reviews, share their experiences, and add a list of their favorite museums. The application provides a variety of filter options to find museums including searching by name, category, city, rate, and price. It can be also a group of filtering, for example, searching by city, category, and price.
 
-<div class="panel panel-danger">
 **_Features of Application_**
-{: .panel-heading}
-<div class="panel-body">
 1. Creating users with all fields validation using useFormik and Yup library.
 2. Ability to modify the user profile, information, and reset the password if forgotten.
 3. Searching for museum with different filters including name, city, type, price, and rate.
@@ -15,8 +12,7 @@
 7. Showing a details page which contains important information about museum including opening hours, price, number of users liking this museum, address, and short information.
 8. Showing top rated museums in Amsterdam city.
 9. Showing upcoming events in some museums.
-</div>
-</div>
+
 
 [Click here for the Demo version](https://vimeo.com/828049139?share=copy) 
 
