@@ -14,12 +14,12 @@
 8. Showing top rated museums in Amsterdam city.
 9. Showing upcoming events in some museums.
 
-[Click here for the Demo version](https://vimeo.com/828049139?share=copy) {: .shadow}
+[Click here for the Demo version](https://vimeo.com/828049139?share=copy) 
 
-![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header"){: .shadow}
-![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums"){: .shadow}
+![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header")
+![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums")
 
-![Adding Review](client/src/assets/Images-readme/showing-adding-review.png "Adding Review") {: .shadow}
+![Adding Review](client/src/assets/Images-readme/showing-adding-review.png "Adding Review") 
 
 ![Editing and deleting review](client/src/assets/Images-readme/eadit-delet-review.png "Editing and deleting review")
 
