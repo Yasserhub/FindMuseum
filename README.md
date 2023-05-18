@@ -1,16 +1,33 @@
+# The final project at HackYourFuture program
 
-# Class XX final project
+This is the final project using the MERN stack (MongoDB, Express, React, Node) ![MERN](client/src/assets/Images-readme/MERN.png "MERN"){:target="\_blank"} by following the agile methodology with a team and a group of mentors. A quick guide to what we built:
 
-This is the final project using the MERN stack (MongoDB, Express, React, Node) by following the agile methodology with a team and a group of mentors. A quick guide to what we built:
+**_Find Museum_** is an application aiming to provide information of museums in the Netherlands. It presents also a coming events in the museums\. In addition, the application's visitor can get special offers to visit museums, follow upcoming events, read museum reviews, share their experiences, and add a list of their favorite museums. The application provides a variety of filter options to find museums including searching by name, category, city, rate, and price. It can be also a group of filtering, for example, searching by city, category, and price.
 
-***Find Museum*** is an application aiming to provide information of museums in the Netherlands. It presents also a coming events in the museums\. In addition, the application's visitor can get special offers to visit museums, follow upcoming events, read museum reviews, share their experiences, and add a list of their favorite museums. The application provides a variety of filter options to find museums including searching by name, category, city, rate, and price. It can be also a group of filtering, for example, searching by city, category, and price. 
+**_Features of Application_**
 
-![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header")
-![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums")
+1. Creating users with all fields validation using useFormik and Yup library.
+2. Ability to modify the user profile, information, and reset the password if forgotten.
+3. Searching for museum with different filters including name, city, type, price, and rate.
+4. Adding or removing list of favorite museums.
+5. Adding, editing and deleting reviews.
+6. Getting special offers for visiting museum sent to your email; making sure that only one offer for each user to a selected museum.
+7. Showing a details page which contains important information about museum including opening hours, price, number of users liking this museum, address, and short information.
+8. Showing top rated museums in Amsterdam city.
+9. Showing upcoming events in some museums.
 
-![Hello](client/src/assets/Images-readme/footer.png "Footer") 
+[Click here for the Demo version](https://vimeo.com/828049139?share=copy){:target="\_blank"}
 
-`[Click here for the Demo version](TODO: add link)`
+![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header"){:target="\_blank"}
+![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums"){:target="\_blank"}
+
+![Adding Review](client/src/assets/Images-readme/showing-adding-review.png "Adding Review") {:target="\_blank"}
+
+![Editing and deleting review](client/src/assets/Images-readme/eadit-delet-review.png "Editing and deleting review") {:target="\_blank"}
+
+![Data Flow Diagram](client/src/assets/Images-readme/Data-Flow-Diagram.png "Data Flow Diagram") {:target="\_blank"}
+
+![Agile Methodology](client/src/assets/Images-readme/agile%20methodology.png "Agile Methodology") {:target="\_blank"}
 
 ## 1. Setup
 
@@ -36,7 +53,9 @@ client
 └── src
 |   └── __tests__
 |   └── __testUtils__
+|   └── assets
 |   └── components
+|   └── context
 |   └── hooks
 |   └── pages
 |       └── __tests__
@@ -66,6 +85,7 @@ server
 - `__tests__` || any `jest` tests for specific components will be in a `__tests__` folder on the same level
 - `__testUtils__` || any code that is only being used in the tests is put in the `__testUtils__` folder to separate that away from the rest of the code
 - `components` || all of our shared components that are used over multiple pages
+- `components` || containing three files providing a way to pass data through the component tree without having to pass props down manually at every level.
 - `hooks` || all of our custom hooks
 - `pages` || the page components of our app, any routing will go between these components
 - `pages/components` || components used specifically on those pages
