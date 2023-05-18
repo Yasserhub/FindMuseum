@@ -18,7 +18,7 @@
 </div>
 </div>
 
-[Click here for the Demo version](https://vimeo.com/828049139?share=copy) {:target="_blank"}
+[Click here for the Demo version](https://vimeo.com/828049139?share=copy) 
 
 ![Application's Header](client/src/assets/Images-readme/NAV.png "Application's Header"){:target="_blank"}
 ![Searching for Museums](client/src/assets/Images-readme/searching-museums.png "Searching for Museums"){:target="_blank"}
