@@ -3,6 +3,18 @@ import { logError } from "../util/logging.js";
 import sendEmail from "../util/sendEmail.js";
 import validationErrorMessage from "../util/validationErrorMessage.js";
 
+import JWT from "jsonwebtoken";
+import Token from "../models/Token.js";
+import bcrypt from "bcrypt";
+
+const bcryptSalt = process.env.BCRYPT_SALT;
+
+/**
+ * @desc  Creating a new User with doing validation registration
+ * @route /api/user/register
+ * @method post
+ * @access public
+ */
 export const createUser = async (req, res) => {
   try {
     const { user } = req.body;
@@ -24,9 +36,18 @@ export const createUser = async (req, res) => {
         .status(400)
         .json({ success: false, msg: validationErrorMessage(errorList) });
     } else {
+      const JWTSecret = process.env.JWT_SECRET;
+      const salt = await bcrypt.genSalt(bcryptSalt);
+      user.password = await bcrypt.hash(user.password, salt);
+
       const newUser = await User.create(user);
 
-      res.status(201).json({ success: true, user: newUser });
+      const token = JWT.sign({ id: newUser._id }, JWTSecret);
+
+      const { password, ...other } = newUser._doc; // to avoid  sending password back to user
+      newUser.password = password; // to solve problem of declare password as a variable without assigning it.
+
+      res.status(201).json({ success: true, user: { ...other, token } });
     }
   } catch (error) {
     logError(error);
@@ -41,7 +62,12 @@ export const createUser = async (req, res) => {
   }
 };
 
-//
+/**
+ * @desc  Getting the numbers of users who liked this museum (showed when user clicked for details of museum)
+ * @route /api/user
+ * @method get
+ * @access public
+ */
 export const getFavNum = async (req, res) => {
   try {
     const museumFav = await User.find();
@@ -53,20 +79,44 @@ export const getFavNum = async (req, res) => {
     });
   }
 };
-//
 
+/**
+ * @desc  login user
+ * @route /api/user/login
+ * @method post
+ * @access public
+ */
 export const loginUser = async (req, res) => {
   try {
     const { user } = req.body;
     const userData = await User.findOne({ email: user.email });
 
     if (!userData) {
-      res.status(404).json({ success: false, msg: "Wrong Credentials!" });
-      return;
+      return res
+        .status(404)
+        .json({ success: false, msg: "invalid email or password!" });
     }
 
-    if (user.password === userData.password) {
-      res.status(201).json({ success: true, user: userData });
+    const isPasswordMatch = await bcrypt.compare(
+      user.password,
+      userData.password
+    );
+
+    if (isPasswordMatch) {
+      const isToken = await Token.findOne({ userId: userData._id });
+      if (isToken) await isToken.deleteOne();
+
+      const JWTSecret = process.env.JWT_SECRET;
+      const token = JWT.sign({ id: userData._id }, JWTSecret);
+      const newToken = await Token({
+        userId: userData._id,
+        token: token,
+        createdAt: Date.now(),
+      }).save();
+
+      const { password, ...other } = userData._doc; // to avoid  sending password back to user
+      userData.password = password; // to solve problem of declare password as a variable without assigning it.
+      res.status(201).json({ success: true, user: { ...other, newToken } });
     } else {
       res.status(400).json({ success: false, msg: "Wrong Credentials!" });
       return;
@@ -79,6 +129,12 @@ export const loginUser = async (req, res) => {
   }
 };
 
+/**
+ * @desc  Update data of user
+ * @route /api/update/:id
+ * @method put
+ * @access private
+ */
 export const updateUser = async (req, res) => {
   try {
     const { authUser } = req.body;
@@ -213,6 +269,7 @@ export const forgotPassword = async (req, res) => {
   }
 };
 
+//
 export const resetPassword = async (req, res) => {
   try {
     const { password } = req.body;
