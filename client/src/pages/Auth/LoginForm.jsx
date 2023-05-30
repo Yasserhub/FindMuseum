@@ -19,6 +19,9 @@ const LoginForm = () => {
   const { setIsLoggedIn, setAuthUser, setFavorites, clearFavorites } =
     useAuth();
 
+  /**
+   * @desc onSuccess Function is called after getting response from the server
+   */
   const onSuccess = (res) => {
     formik.resetForm();
     //get user from database
@@ -54,6 +57,7 @@ const LoginForm = () => {
       navigate("/");
     }, 2000);
   };
+  // End of onSuccess function
 
   const { isLoading, error, performFetch, cancelFetch } = useFetch(
     "/user/login",
@@ -90,7 +94,10 @@ const LoginForm = () => {
 
   //error notification
   useEffect(() => {
-    if (error == "Wrong Credentials!") {
+    if (
+      error == "Wrong Credentials!" ||
+      error == "invalid email or password!"
+    ) {
       toast.error(error, {
         position: toast.POSITION.TOP_CENTER,
         autoClose: 2000,
